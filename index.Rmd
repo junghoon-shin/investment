@@ -22,14 +22,26 @@ knitr::write_bib(c(.packages(), "bookdown", "knitr", "rmarkdown"), "packages.bib
 ```
 
 ```{r, include = F}
+if (!"remotes" %in% installed.packages()) {
+  install.packages("remotes")
+}
+
 library(remotes)
+
+if (!"facetscales" %in% installed.packages()) {
+  install_github("zeehio/facetscales")
+}
 
 if (!"yfinance" %in% installed.packages()) {
   install_github("ljupch0/yfinance")
 }
 
-if (!"facetscales" %in% installed.packages()) {
-  install_github("zeehio/facetscales")
+if (!"pacman" %in% installed.packages()) {
+  install.packages("pacman")
+}
+
+if (!"BiocManager" %in% installed.packages()) {
+  install.packages("BiocManager")
 }
 
 library(pacman)
@@ -67,12 +79,17 @@ p_load(bookdown,
        XML,
        yfinance)
 
+options(bitmapType = "cairo")
+
 knitr::opts_chunk$set(echo = FALSE, 
                       message = FALSE, 
                       warning = FALSE, 
                       error = FALSE,
-                      out.width = "100%", out.height = "100%", 
-                      fig.width = 7, fig.height = 5,
+                      out.width = "100%", 
+                      out.height = "100%", 
+                      fig.width = 7, 
+                      fig.height = 5,
+                      dev = "png",
                       dev.args = list(bg = "transparent", type = "cairo"))
 
 theme_set(theme_bw(base_family = "Lato"))

@@ -18,4 +18,6 @@ getCurrentFileLocation = function() {
 
 setwd(getCurrentFileLocation())
 
+clean_book(T)
+
 render_book("index.Rmd")
