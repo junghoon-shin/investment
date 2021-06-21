@@ -183,9 +183,10 @@ convert_ticker = function(google) {
                       "\\.KOSDAQ" = ".KQ",
                       "\\.NYSE" = "",
                       "\\.NASDAQ" = "",
+                      "\\.CVE" = ".V",
                       "\\.EPA" = ".PA",
-                      "\\.HKG" = "\\.HK",
                       "\\.SWX" = "\\.SW",
+                      "\\.HKG" = "\\.HK",
                       "\\.TPE" = ".TW",
                       "RO\\.SW" = "ROG\\.SW"))
 }

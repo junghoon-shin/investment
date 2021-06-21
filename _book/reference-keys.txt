@@ -132,13 +132,13 @@ key-financials
 big-four-numbers
 investment-decision
 small-cap
-intellia-therapeutics-5.2b
+intellia-therapeutics-na
 nano-x-imaging-1.5b
-unity-software-29.3b
-parrot-208.7m
+unity-software-na
+parrot-209m
 ambarella-3.6b
 aerovironment-2.7b
-surface-oncology-317.9m
+surface-oncology-na
 ceo
 ceo-payment-relative-to-business-income
 ceo-analysis-reports
