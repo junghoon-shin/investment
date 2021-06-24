@@ -134,11 +134,11 @@ investment-decision
 small-cap
 intellia-therapeutics-5.8b
 nano-x-imaging-1.4b
-unity-software-31.9b
+unity-software-31.7b
 parrot-204.7m
 ambarella-3.9b
 aerovironment-2.8b
-surface-oncology-318.3m
+surface-oncology-318.8m
 ceo
 ceo-payment-relative-to-business-income
 ceo-analysis-reports
