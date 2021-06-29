@@ -106,9 +106,9 @@ fig:unnamed-chunk-147
 fig:unnamed-chunk-148
 fig:unnamed-chunk-149
 fig:unnamed-chunk-150
+fig:unnamed-chunk-151
 fig:unnamed-chunk-152
 fig:unnamed-chunk-153
-fig:unnamed-chunk-154
 buffett
 rule-no.-1
 value-investing
@@ -135,7 +135,7 @@ small-cap
 intellia-therapeutics-9.1b
 nano-x-imaging-1.6b
 unity-software-30.9b
-parrot-200.8m
+parrot-201.7m
 ambarella-3.8b
 aerovironment-2.7b
 surface-oncology-324.4m
