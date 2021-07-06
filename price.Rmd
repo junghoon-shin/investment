@@ -232,7 +232,7 @@ gt$layout$clip[str_detect(gt$layout$name, "panel")] = "off"
 
 (ref:adjusted-closing-price) [Adjusted stock prices](https://www.investopedia.com/terms/a/adjusted_closing_price.asp) over the last 2 years. The blue shade at the bottom of each panel indicates trading volume per day (smoothed for visualization).
 
-```{r, fig.height = 2.4 * length(unique(price_data$Name)), fig.cap = "(ref:adjusted-closing-price)"}
+```{r, fig.height = 2.5 * length(unique(price_data$Name)), fig.cap = "(ref:adjusted-closing-price)"}
 as_ggplot(gt)
 ```
 
