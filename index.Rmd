@@ -186,6 +186,7 @@ convert_ticker = function(google) {
                       "\\.CVE" = ".V",
                       "\\.EPA" = ".PA",
                       "\\.SWX" = "\\.SW",
+                      "\\.AMS" = "\\.AS",
                       "\\.HKG" = "\\.HK",
                       "\\.TPE" = ".TW",
                       "RO\\.SW" = "ROG\\.SW"))
