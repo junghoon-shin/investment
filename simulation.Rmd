@@ -5,7 +5,7 @@ In the Shiny web application embedded below, you can freely tune your investment
 1. Initial amount of investment
 2. Investment amount per month
 3. Increment of monthly investment per year
-4. Your target profit
+4. Your target annual profit
 5. [Annual inflation rate](#inflation)
 6. Total period of investment
 
