@@ -96,7 +96,7 @@ financials = bind_rows(financials_TSM, financials_others) %>% arrange(Yahoo)
 netIncomeGrowth = financials %>%
   arrange(date) %>%
   group_by(Yahoo) %>%
-  summarize(netIncomeGrowth = (netIncome[length(netIncome)] / netIncome[1]) ^ (1/length(netIncome)) - 1,
+  summarize(netIncomeGrowth = (netIncome[length(netIncome)] / netIncome[1]) ^ (1/(length(netIncome) - 1)) - 1,
             firstnetIncome = netIncome[1],
             lastnetIncome = netIncome[length(netIncome)]) %>%
   ungroup %>%
