@@ -52,7 +52,7 @@ portfolio_bond %>%
 
 ## Current and target asset allocation
 
-```{r, fig.width = 7, fig.height = 4.5, fig.cap = "Current and long-term target allocation of my assets"}
+```{r, fig.width = 7, fig.height = 4.5, fig.cap = "Current and long-term target allocation of my asset"}
 f1 = allocation %>%
   ggplot(mapping = aes(x = 1, y = `Current proportion`)) +
   geom_col(mapping = aes(fill = category), position = "fill", color = "black") +
