@@ -4,7 +4,7 @@
 
 ## Invested asset composition
 
-```{r, fig.height = 3.5, fig.cap = "Asset allocation"}
+```{r, fig.height = 3.5, fig.cap = "Invested asset allocation"}
 portfolio %>%
   ggplot(mapping = aes(x = 1, y = Weight)) +
   geom_bar(stat = "summary", fun = sum, position = "fill", mapping = aes(fill = Class), color = "black") +
@@ -75,5 +75,5 @@ f2 = allocation %>%
   labs(title = "Target allocation", x = NULL, y = NULL) +
   theme(panel.border = element_blank(), panel.grid = element_blank(), axis.ticks.y = element_blank(), axis.text = element_blank())
 
-ggarrange(f1, f2, common.legend = T, legend = "bottom")
+ggarrange(f1, f2, common.legend = T, legend = "bottom", align = "hv")
 ```

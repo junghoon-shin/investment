@@ -213,17 +213,21 @@ portfolio = drive_get("Investment/Investment") %>% read_sheet(sheet = "Portfolio
 
 allocation = drive_get("Investment/Investment") %>% read_sheet(sheet = "Asset allocation")
 
+class_level = c("Stock", "REIT", "Bond", "Commodity", "Gold", "Cash")
+
+region_level = c("Korea", "USA", "Europe", "Emerging", "Global")
+
 portfolio %<>%
   mutate(Name = clean_name(Name),
          Name = case_when(Name == "Hyundai Motor S2 Pref Shs" ~ "Hyundai Motor",
                           T ~ Name),
-         Class = factor(Class, levels = c("Stock", "REIT", "Bond", "Commodity", "Gold")),
-         Region = factor(Region, levels = c("Korea", "USA", "Europe", "Emerging", "Global")))
+         Class = factor(Class, levels = class_level),
+         Region = factor(Region, levels = region_level))
 
 allocation %<>%
   mutate(`Target proportion` = round(`Target proportion`, 3),
-         Class = factor(Class, levels = c("Stock", "REIT", "Bond", "Commodity", "Gold")),
-         Region = factor(Region, levels = c("Korea", "USA", "Europe", "Emerging", "Global")),
+         Class = factor(Class, levels = class_level),
+         Region = factor(Region, levels = region_level),
          category = str_c(Class, Region, sep = " - ") %>% 
            {case_when(. == "Commodity - Global" ~ "Commodity",
                       . == "Gold - Global" ~ "Gold",
@@ -256,9 +260,7 @@ portfolio_bond = portfolio %>%
                             Region == "Korea" & str_detect(Name, "10") ~ "South Korea 10-year government bond",
                             T ~ "Others"),
          Weight = Weight / sum(Weight))
-```
 
-```{r}
 my_stock = portfolio %>% 
   filter(Class %in% c("Stock", "REIT")) %>%
   left_join(company %>% select(Name, Industry)) %>%
