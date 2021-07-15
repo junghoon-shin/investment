@@ -213,7 +213,7 @@ portfolio = drive_get("Investment/Investment") %>% read_sheet(sheet = "Portfolio
 
 allocation = drive_get("Investment/Investment") %>% read_sheet(sheet = "Asset allocation")
 
-class_level = c("Stock", "REIT", "Bond", "Commodity", "Gold", "Cash")
+class_level = c("Stock", "REIT", "Commodity", "Gold", "Bond", "Cash")
 
 region_level = c("Korea", "USA", "Europe", "Emerging", "Global")
 
