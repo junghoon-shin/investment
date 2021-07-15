@@ -133,8 +133,8 @@ key-financials
 big-four-numbers
 investment-decision
 small-cap
-intellia-therapeutics-9.6b
-nano-x-imaging-1.5b
+intellia-therapeutics-10.2b
+nano-x-imaging-1.4b
 unity-software-27.8b
 parrot-206.6m
 ambarella-3.5b
