@@ -136,7 +136,7 @@ small-cap
 intellia-therapeutics-10b
 nano-x-imaging-1.4b
 unity-software-28b
-parrot-207.3m
+parrot-207.2m
 ambarella-3.4b
 aerovironment-2.4b
 surface-oncology-283.2m
